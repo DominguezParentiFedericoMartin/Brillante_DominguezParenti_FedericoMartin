@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Social y Polideportivo Brillanté</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="https://kit.fontawesome.com/0dcd9a8f20.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body> 
+    <header class="sticky container-fluid sticky-bottom">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logopequeño" src="../assets/img/logopequeño.png" alt="Logo de la empresa">
+                </a>
+                <h1 class="header_titulo">Club Social y Polideportivo Brillanté</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"  id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 paginas">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./elclub.html">El Club</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./eventos.html">Eventos/Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Socios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="socios">
+        <h1 class="socios_título">Formá parte de este proyecto eterno</h1>
+        <form class="socios_formulario" action="../pages/Disclaimer.html" method="get">
+        <section>
+            <h2 class="socios_subtítulo">Paso 1: Información Personal</h2>
+            <section class="socios_formulario_na">
+                <div>
+                    <fieldset>
+                        <legend>Nombre y Apellido</legend>
+                        <input type="text" name="nombre" placeholder="Nombre" required>
+                        <input type="text" name="apellido" placeholder="Apellido" required>
+                    </fieldset>
+                </div>
+            </section>
+            <section class="socios_formulario_info">
+                <div class="socios_formulario_info">
+                    <fieldset>
+                        <legend>Fecha de Nacimiento</legend>
+                        <input type="date" id="start" name="trip-start" value="" min="1900-01-01" max="2023-01-01>" required>
+                    </fieldset>
+                    <fieldset id="socios_excepcion">
+                        <legend>Sexo</legend>
+                        <select class="" name="sexo" id="sexo">
+                            <option value="1">Masculino</option>
+                            <option value="2">Femenino</option>
+                            <option value="3">Otro</option>
+                        </select>
+                    </fieldset>
+                <!--</div>
+                <div> -->
+                    <fieldset>
+                        <legend>Documento</legend>
+                        <select class="" name="tipo" id="tipo">
+                            <option value="1">DNI</option>
+                            <option value="2">Pasaporte</option>
+                            <option value="3">Cédula</option>
+                        </select>
+                        <input type="number" name="Documento" placeholder="Número" required>
+                    </fieldset>
+                </div>
+            </section>
+            <section>
+                <fieldset>
+                    <legend>Correo Electrónico</legend>
+                    <input type="email" name="mail" placeholder="Mail" required>
+                    <input type="email" name="confirmacionmail" placeholder="Confirmar Mail" required>
+                </fieldset>
+            </section>
+            <section class="socios_formulario_telefono">
+                <div>
+                    <h3>Teléfono</h3>
+                    <fieldset>
+                        <input id="area" type="number" name="area" placeholder="Código de área" required>
+                        <input type="number" name="telefono" placeholder="Número" required>
+                    </fieldset>
+                </div>
+                <div>
+                    <h3>Celular</h3>
+                    <fieldset>
+                        <input id="area" type="number" name="area" placeholder="Código de área" required>
+                        <input type="number" name="telefono" placeholder="Número" required>
+                    </fieldset>
+                </div>
+            </section>
+        </section>
+        <section>
+            <h2 class="socios_subtítulo">Paso 2: Elija un plan</h2>
+            <table class="socios_seleccion">
+            <tr>
+                <th>Planes</th>
+                <th>Descripción</th>
+                <th>Precios</th>
+                <TH>Selección</th>
+            </tr>
+            <tr>
+                <td>Infantil</td>
+                <td>Descripción</td>
+                <td>$2000 x mes</td>
+                <td><input type="radio" id="infantil" name="plan" value="1" required/></td>
+            </tr>
+            <tr>
+                <td>Adolescente</td>
+                <td>Descripción</td>
+                <td>$2500 x mes</td>
+                <td><input type="radio" id="Adolescente" name="plan" value="2" required/></td>
+            </tr>
+            <tr>
+                <td>Adulto</td>
+                <td>Descripción</td>
+                <td>$3000 x mes</td>
+                <td><input type="radio" id="Adulto" name="plan" value="3" required/></td>
+            </tr>
+            <tr>
+                <td>Jubilado</td>
+                <td>Descripción</td>
+                <td>$2000 x mes</td>
+                <td><input type="radio" id="Jubilado" name="plan" value="4" required/></td>
+            </tr>
+            </table>
+        </section>
+        <section>
+            <h2 class="socios_subtítulo">Paso 3: pagar</h2>
+            <h3>Método de pago</h3>
+            <div>
+                <fieldset>
+                    <legend>Seleccione un medio de pago</legend>
+                    <select class="" name="mediodepago" id="mediodepago">
+                    <option value="1">Visa</option>
+                    <option value="2">Mastercard</option>
+                </select required>
+                </fieldset>
+            </div>
+            <div class="socios_formulario_tarjeta">
+                <fieldset>
+                    <legend> Número de tarjeta</legend>
+                    <input type="number" name="tarjeta" id="" placeholder="Número de Tarjeta" required>
+                </fieldset>
+                    <fieldset>
+                        <legend>Caducidad</legend>
+                        <select class="" name="caducidad" id="caducidad">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select required>
+                        <select class="" name="caducidad">
+                            <option value="1">2023</option>
+                            <option value="2">2024</option>
+                            <option value="3">2025</option>
+                            <option value="4">2026</option>
+                            <option value="5">2027</option>
+                            <option value="6">2028</option>
+                            <option value="7">2029</option>
+                            <option value="8">2030</option>
+                        </select required>      
+                    </fieldset>
+                    <fieldset id="socios_excepcion">
+                        <legend>Cód. de seguridad</legend>
+                        <input type="number" name="seguridad" id="" required min="000" max="999" >
+                    </fieldset>
+            </div>
+            <h3>Información de facturación</h3>
+            <div class="socios_formulario_facturacion">
+                <div class="socios_formulario_facturacion_na">
+                    <fieldset>
+                        <legend>Nombre</legend>
+                        <input type="text" name="nombre" id="" required>
+                    </fieldset>
+                    <Fieldset>
+                        <legend>Apellido</legend>
+                        <input type="text" name="apellido" id="" required>
+                    </Fieldset>
+                </div>
+                <div>
+                    <Fieldset>
+                        <legend>Localidad</legend>
+                        <input type="text" name="Localidad" id="" required>
+                    </Fieldset>
+                </div>
+            </div>
+            <div class="socios_formulario_facturacion_direccion">
+                <fieldset>
+                    <legend>Dirección de facturación</legend>
+                    <input type="text" name="facturación" id="" required>
+                </fieldset>
+                <fieldset id="socios_excepcion">
+                    <legend>Código Postal</legend>
+                    <input type="number" name="postal" id="" required min="0000" max="9999">
+                </fieldset>
+            </div>
+        <button type="submit">Continuar</button>
+        </form>
+    </main>
+    <footer>
+        <div class="card-header">
+            <div class="row card-header_datos">
+                <p class="col-sm-4 col-lg-2"><b>Brillanté.com.ar</b></p>
+                <p class="col-sm-4 col-lg-2">Sitio Oficial</p>
+                <p class="col-sm-4 col-lg-4">Calle Falsa 1234 - CP R2D2 - CABA - Argentina</p>
+                <p class="col-sm-6 col-lg-2"><a href="tel:12345678">1234-5678</a></p>
+                <p class="col-sm-6 col-lg-2"><a href="mailto:info@brillanté.com.ar">info@brillanté.com.ar</a></p>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="arriba">
+                <p>Los estoicos del deporte</p>
+                <ul class="redes">
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/?lang=es" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/sociedadfundadorabrillante/" target="_blank">instagram</a></li>
+                </ul> 
+            </div>
+            <div class="abajo">
+                <p class="marcadeagua">Desarrollado por <a href="" target="_blank"> Dominguez Parenti, Federico Martín</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
