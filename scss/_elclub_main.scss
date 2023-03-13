@@ -1,0 +1,32 @@
+.club_titulo {
+    text-align: center;
+}
+.club_texto{
+    display: flex;
+    position: relative;
+    .club_historia {
+        text-align: justify;
+        margin: map-get($sizes, xs);
+        .club_img {
+            width: 30%;
+            margin: map-get($sizes, xs);
+        }
+        #club_img1{
+            float: right
+        }
+        #club_img2{
+            float: left
+        }
+}
+}
+.datosclub {
+    margin: map-get($sizes, xs);
+    ul {
+        list-style-type: none;
+        li {
+            margin-top: map-get($sizes, xs);
+            margin-bottom: map-get($sizes, xs);
+        }
+    }
+}
+

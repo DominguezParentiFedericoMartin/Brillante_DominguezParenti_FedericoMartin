@@ -1,0 +1,59 @@
+.socios {
+    .socios_título{
+        text-align: center;
+        margin: map-get($sizes, s);
+    }    
+    .socios_formulario{
+        display: inline-block;
+        margin-right:map-get($sizes, q);
+        margin-left:map-get($sizes, q);
+        section {
+            div{
+                margin-right: map-get($sizes, xs);
+                margin-top: map-get($sizes, xs);
+                margin-bottom: map-get($sizes, xs);
+                width: 100%;
+                }
+            .socios_subtítulo{
+                margin-top: map-get($sizes, xs);
+                margin-bottom: map-get($sizes, xs);
+                text-decoration: underline;
+            }
+            .socios_formulario_na{
+                display: flex;
+            }
+            .socios_formulario_info{
+                display:flex;
+                justify-content: space-between;
+            }
+            .socios_seleccion{
+                border: solid;
+                tr{
+                    text-align: center;
+                td{
+                        text-align: center;
+                    }
+                }
+            }
+            .socios_formulario_tarjeta{
+                display: flex;
+                justify-content: space-between;
+            }
+            .socios_formulario_facturacion{
+                display: flex;
+                .socios_formulario_facturacion_na{
+                    display: flex;
+                }
+            }
+            .socios_formulario_facturacion_direccion{
+                display: flex;
+            } 
+        }
+        .socios_formulario_telefono{
+            display: flex;
+        }
+    }
+}
+#socios_excepcion{
+    margin-left: map-get($sizes, xs);
+} 

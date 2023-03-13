@@ -1,0 +1,305 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  box-sizing: border-box; }
+
+.logopequeño {
+  width: 50px;
+  margin-top: 3px;
+  margin-left: 0px; }
+
+.header_titulo {
+  font-size: 150%;
+  margin-right: 5px;
+  margin-top: 3px; }
+
+.paginas {
+  width: 100%;
+  justify-content: flex-end; }
+
+.carousel {
+  margin: auto;
+  height: 80%;
+  width: 80%;
+  display: block; }
+  .carousel .index_carousel_txt {
+    background-color: rgba(255, 255, 0, 0.361);
+    font-size: 15px;
+    padding: 5px; }
+    .carousel .index_carousel_txt a {
+      text-decoration: none;
+      color: black; }
+
+.index_p {
+  text-align: justify;
+  margin-bottom: 5%;
+  margin-top: 5%; }
+
+.club_titulo {
+  text-align: center; }
+
+.club_texto {
+  display: flex;
+  position: relative; }
+  .club_texto .club_historia {
+    text-align: justify;
+    margin: 2%; }
+    .club_texto .club_historia .club_img {
+      width: 30%;
+      margin: 2%; }
+    .club_texto .club_historia #club_img1 {
+      float: right; }
+    .club_texto .club_historia #club_img2 {
+      float: left; }
+
+.datosclub {
+  margin: 2%; }
+  .datosclub ul {
+    list-style-type: none; }
+    .datosclub ul li {
+      margin-top: 2%;
+      margin-bottom: 2%; }
+
+.eventos_título {
+  text-align: center;
+  margin: 2%; }
+
+.eventos_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "card1 card1 card2 card3" "card1 card1 card4 card5" "card9 card6 card8 card8" "card9 card7 card8 card8";
+  row-gap: 10px;
+  justify-content: space-between; }
+  .eventos_cards .eventos_card1 {
+    grid-area: card1; }
+  .eventos_cards .eventos_card2 {
+    grid-area: card2; }
+  .eventos_cards .eventos_card3 {
+    grid-area: card3; }
+  .eventos_cards .eventos_card4 {
+    grid-area: card4; }
+  .eventos_cards .eventos_card5 {
+    grid-area: card5; }
+  .eventos_cards .eventos_card6 {
+    grid-area: card6; }
+  .eventos_cards .eventos_card7 {
+    grid-area: card7; }
+  .eventos_cards .eventos_card8 {
+    grid-area: card8; }
+  .eventos_cards .eventos_card9 {
+    grid-area: card9; }
+  .eventos_cards section {
+    width: 90%;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    vertical-align: top;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .eventos_cards section a .eventos_imgcard {
+      width: 100%; }
+    .eventos_cards section div h2 {
+      font-size: 100%; }
+    .eventos_cards section div p {
+      font-size: 80%; }
+
+.tienda_título {
+  text-align: center;
+  margin: 2%; }
+
+.tienda_subtítulo {
+  padding-right: 30%;
+  text-decoration: underline;
+  margin-top: 2%; }
+
+.tienda_news {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 2%; }
+
+.tienda_comprar, .tienda_ver {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; }
+
+.tienda_ver {
+  background-color: yellow;
+  color: black; }
+
+.socios .socios_título {
+  text-align: center;
+  margin: 5%; }
+
+.socios .socios_formulario {
+  display: inline-block;
+  margin-right: 25%;
+  margin-left: 25%; }
+  .socios .socios_formulario section div {
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%; }
+  .socios .socios_formulario section .socios_subtítulo {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-decoration: underline; }
+  .socios .socios_formulario section .socios_formulario_na {
+    display: flex; }
+  .socios .socios_formulario section .socios_formulario_info {
+    display: flex;
+    justify-content: space-between; }
+  .socios .socios_formulario section .socios_seleccion {
+    border: solid; }
+    .socios .socios_formulario section .socios_seleccion tr {
+      text-align: center; }
+      .socios .socios_formulario section .socios_seleccion tr td {
+        text-align: center; }
+  .socios .socios_formulario section .socios_formulario_tarjeta {
+    display: flex;
+    justify-content: space-between; }
+  .socios .socios_formulario section .socios_formulario_facturacion {
+    display: flex; }
+    .socios .socios_formulario section .socios_formulario_facturacion .socios_formulario_facturacion_na {
+      display: flex; }
+  .socios .socios_formulario section .socios_formulario_facturacion_direccion {
+    display: flex; }
+  .socios .socios_formulario .socios_formulario_telefono {
+    display: flex; }
+
+#socios_excepcion {
+  margin-left: 2%; }
+
+footer {
+  margin-top: 15px; }
+  footer .card-header {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center; }
+    footer .card-header .card-header_datos {
+      width: 100%;
+      display: flex;
+      justify-content: space-around; }
+      footer .card-header .card-header_datos p a {
+        text-decoration: none;
+        text-decoration: underline;
+        color: white; }
+  footer .card-body {
+    background-color: yellow;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    footer .card-body .arriba {
+      display: flex; }
+      footer .card-body .arriba p {
+        margin: auto;
+        padding: auto; }
+      footer .card-body .arriba ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style-type: none;
+        margin: auto;
+        padding: auto;
+        overflow: hidden; }
+        footer .card-body .arriba ul li {
+          margin: 5px; }
+    footer .card-body .abajo {
+      display: inline-block;
+      align-items: center; }
+      footer .card-body .abajo .marcadeagua {
+        font-size: 15px;
+        color: grey;
+        margin-top: 20px; }
+        footer .card-body .abajo .marcadeagua a {
+          text-decoration: none;
+          color: grey; }
+
+.card-group {
+  width: 66%;
+  height: 66%;
+  margin: 0 auto;
+  text-align: center; }
+  .card-group .card {
+    align-items: center;
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+    .card-group .card .imgcard {
+      width: 100%; }
+
+@media screen and (max-width: 768px) {
+  /*index*/
+  .index_carousel_txt {
+    font-size: 12px;
+    padding: 5px; }
+  .carousel {
+    height: 50%; }
+  /*El Club*/
+  .club_texto .club_historia .club_img {
+    width: 50%;
+    margin: 2%; }
+  /*Eventos*/
+  .eventos_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-areas: "card1" "card2" "card3" "card4" "card5" "card6" "card7" "card8" "card9";
+    row-gap: 10px;
+    justify-content: space-between; }
+  /*Socios*/
+  .socios_formulario_info {
+    flex-direction: column;
+    justify-content: space-between; }
+  .socios_formulario_telefono {
+    flex-direction: column; }
+  .socios_formulario_tarjeta {
+    flex-direction: column; }
+  .socios_formulario_facturacion {
+    flex-direction: column; }
+  .socios_formulario_facturacion_direccion {
+    flex-direction: column; } }
+
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  main .card-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center; }
+  main .card {
+    align-items: center;
+    background-color: white;
+    margin: 5px 0PX;
+    border-radius: 0px; } }
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  /*El club*/
+  .club_img {
+    width: 40%; }
+  /*Eventos*/
+  .eventos_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: "card1 card1 card2" "card1 card1 card3" "card4 card8 card8" "card5 card8 card8" "card9 card6 card7";
+    row-gap: 10px;
+    justify-content: space-between; } }

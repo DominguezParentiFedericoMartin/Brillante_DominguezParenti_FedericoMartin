@@ -1,0 +1,20 @@
+.carousel{
+    margin: auto;
+    height: 80%;
+    width: 80%;
+    display: block;
+.index_carousel_txt{
+        background-color: rgba(255, 255, 0, 0.361);
+        font-size: 15px;
+        padding: 5px;
+        a{
+            text-decoration: none;
+            color: $color-secundario;
+            }     
+}
+}
+.index_p{
+    text-align: justify;
+    margin-bottom: map-get($sizes, s);
+    margin-top: map-get($sizes, s)
+}

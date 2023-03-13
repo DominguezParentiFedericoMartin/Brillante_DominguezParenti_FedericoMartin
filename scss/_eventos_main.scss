@@ -1,0 +1,45 @@
+.eventos_título{
+    text-align: center;
+    margin: map-get($sizes, xs)
+}
+.eventos_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:    "card1 card1 card2 card3"
+                            "card1 card1 card4 card5"
+                            "card9 card6 card8 card8"
+                            "card9 card7 card8 card8";
+    row-gap: 10px;
+    justify-content: space-between;
+    @each $card in card1, card2, card3, card4, card5, card6, card7, card8, card9{
+        .eventos_#{$card}{
+            grid-area: $card ;
+        }
+    };
+    section{
+        width: 90%;
+        background-color: $color-cardbackground;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        vertical-align: top;
+        text-align: center;
+        @include f-d-j (column, space-around);
+        a {
+            .eventos_imgcard {
+            width: 100%;
+            } 
+        }
+        div {
+            h2{
+                font-size: 100%;
+            }
+            p{
+                font-size: 80%;
+            }
+        }
+}
+
+}

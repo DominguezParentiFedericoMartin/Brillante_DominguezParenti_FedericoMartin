@@ -1,0 +1,32 @@
+.tienda_título{
+    text-align: center;
+    margin: map-get($sizes, xs)
+}
+.tienda_subtítulo{
+    padding-right: 30%;
+    text-decoration: underline;
+    margin-top: map-get($sizes, xs);
+}
+.tienda_news{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: map-get($sizes, xs);
+    margin-bottom: map-get($sizes, xs);
+}
+.tienda_comprar{
+    background-color: $color-secundario; 
+    border: none;
+    color: $color-cardbackground;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.tienda_ver{
+    @extend .tienda_comprar;
+    background-color: $color-primario; 
+    color: $color-secundario;
+}

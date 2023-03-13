@@ -1,0 +1,24 @@
+$color-primario: yellow;
+$color-secundario: black;
+$color-cardbackground: white;
+$color-marcadeagua: grey;
+
+$flex:(
+    flex: flex,
+    row: row,
+    column: column,
+    around: space-around,
+    between: space-between,
+    evenly: space-evenly,
+    center: center,
+);
+
+$sizes: (
+    auto: auto,
+    xs: 2%,
+    s: 5%,
+    m: 10%,
+    l:15%,
+    xl: 20%,
+    q: 25%,
+);

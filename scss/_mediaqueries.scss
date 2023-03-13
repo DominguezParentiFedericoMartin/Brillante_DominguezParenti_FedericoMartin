@@ -1,0 +1,90 @@
+
+@media screen and (max-width: 768px) {
+    /*index*/
+    .index_carousel_txt{
+        font-size: 12px;
+        padding: 5px;
+    }
+    .carousel{
+        height: 50%;
+    }
+    /*El Club*/
+    .club_texto{
+        .club_historia {
+            .club_img {
+                width: 50%;
+                margin: map-get($sizes, xs);
+            }
+        }
+    }
+    /*Eventos*/
+    .eventos_cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+        grid-template-areas:    "card1"
+                                "card2"
+                                "card3"
+                                "card4"
+                                "card5"
+                                "card6"
+                                "card7"
+                                "card8"
+                                "card9";
+        row-gap: 10px;
+        justify-content: space-between;
+    }
+    /*Socios*/
+    .socios_formulario_info{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .socios_formulario_telefono{
+        flex-direction: column;
+    }
+    .socios_formulario_tarjeta{
+        flex-direction: column;
+    }
+    .socios_formulario_facturacion{
+        flex-direction: column;
+    }
+    .socios_formulario_facturacion_direccion{
+        flex-direction: column;
+    } 
+}
+
+
+@media screen and (min-width: 0px) and (max-width:800px){
+    main .card-group{
+        @include f-d-j (column, space-around);
+        align-content: center;
+    }
+    main .card{
+        align-items: center;
+        background-color: $color-cardbackground;
+        margin: 5px 0PX;
+        border-radius: 0px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    /*El club*/
+    .club_img{
+        width: 40%;
+    }
+    
+    /*Eventos*/
+    .eventos_cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas:    "card1 card1 card2"
+                                "card1 card1 card3"
+                                "card4 card8 card8"
+                                "card5 card8 card8"
+                                "card9 card6 card7"
+                                ;
+        row-gap: 10px;
+        justify-content: space-between;
+    }
+}
