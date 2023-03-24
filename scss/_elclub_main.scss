@@ -23,6 +23,7 @@
     margin: map-get($sizes, xs);
     ul {
         list-style-type: none;
+        padding-left: 0;
         li {
             margin-top: map-get($sizes, xs);
             margin-bottom: map-get($sizes, xs);

@@ -8,10 +8,9 @@
     <meta name="keywords"  content="Brillanté, Club, Social, Polideportivo, Socios, Inscripción, Estoicos, Deporte">
     <title>Club Social y Polideportivo Brillanté: Asociarse</title>
     <link rel="icon" href="../favicon.ico" type="image/x-icon"> 
-    <link rel="stylesheet" href="https://kit.fontawesome.com/0dcd9a8f20.css" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/all.min.css">
 </head>
 <body> 
     <header class="sticky container-fluid sticky-bottom">
@@ -46,10 +45,10 @@
             </div>
         </nav>
     </header>
-    <main class="socios">
+    <main class="socios container-xl">
+        <div class="container-fluid">
         <h1 class="socios_título">Formá parte de este proyecto eterno</h1>
         <form class="socios_formulario" action="../pages/Disclaimer.html" method="get">
-            <section>
                 <h2 class="socios_subtítulo">Paso 1: Información Personal</h2>
                 <section class="socios_formulario_na">
                     <div>
@@ -60,8 +59,8 @@
                         </fieldset>
                     </div>
                 </section>
-                <section>
-                    <div class="socios_formulario_info">
+                <se>
+                    <di class="socios_formulario_info">
                         <div>
                         <fieldset>
                             <legend>Nacimiento</legend>
@@ -89,15 +88,12 @@
                             <input type="number" name="Documento" placeholder="Número" required>
                         </fieldset>
                         </div>
-                    </div>
-                </section>
-                <section>
+                    </di>
                     <fieldset>
                         <legend>Correo Electrónico</legend>
                         <input type="email" name="mail" placeholder="Mail" required>
                         <input type="email" name="confirmacionmail" placeholder="Confirmar Mail" required>
                     </fieldset>
-                </section>
                 <section class="socios_formulario_telefono">
                     <div>
                         <h3>Teléfono</h3>
@@ -115,7 +111,6 @@
                     </div>
                 </section>
             </section>
-            <section>
                 <h2 class="socios_subtítulo">Paso 2: Elija un plan</h2>
                 <table class="socios_seleccion">
                 <tr>
@@ -149,8 +144,6 @@
                     <td><input type="radio" id="Jubilado" name="plan" value="4" required/></td>
                 </tr>
                 </table>
-            </section>
-            <section>
                 <h2 class="socios_subtítulo">Paso 3: pagar</h2>
                 <h3>Método de pago</h3>
                 <div>
@@ -212,16 +205,16 @@
                             <legend>Nombre</legend>
                             <input type="text" name="nombre" id="" required>
                         </fieldset>
-                        <Fieldset>
+                        <fieldset>
                             <legend>Apellido</legend>
                             <input type="text" name="apellido" id="" required>
-                        </Fieldset>
+                        </fieldset>
                     </div>
                     <div>
-                        <Fieldset>
+                        <fieldset>
                             <legend>Localidad</legend>
                             <input type="text" name="Localidad" id="" required>
-                        </Fieldset>
+                        </fieldset>
                     </div>
                 </div>
                 <div class="socios_formulario_facturacion_direccion">
@@ -234,8 +227,9 @@
                         <input type="number" name="postal" id="" required min="0000" max="9999">
                     </fieldset>
                 </div>
-            <button type="submit">Continuar</button>
+            <button type="submit" class="form_button">Continuar</button>
         </form>
+    </div>
     </main>
     <!--No logro encontrar el porqué del responsive problemático del footer de esta página en particular-->
     <footer>
@@ -252,9 +246,9 @@
             <div class="arriba">
                 <p>Los estoicos del deporte</p>
                 <ul class="redes">
-                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-                    <li><a href="https://twitter.com/?lang=es" target="_blank">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/sociedadfundadorabrillante/" target="_blank">instagram</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/sociedadfundadorabrillante/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                 </ul> 
             </div>
             <div class="abajo">
@@ -263,5 +257,6 @@
         </div>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/all.min.js"></script>
 </body>
 </html>

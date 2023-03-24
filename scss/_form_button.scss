@@ -1,0 +1,13 @@
+.form_button{
+    padding: 2px;
+    border-radius: 10%;
+    border-width: 0.1px;
+    background-color: $color-primario;
+    color: $color-secundario;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
+    &:hover {
+        box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.5);
+    }
+}

@@ -10,7 +10,10 @@ footer {
             width: 100%;
             display: flex;
             justify-content: space-around;
+            align-items: center;
             p{
+                padding: 0;
+                margin: 0;
                 a { 
                     text-decoration:  none;
                     text-decoration: underline;
@@ -21,7 +24,8 @@ footer {
     }
     .card-body { 
         background-color: $color-primario;
-        padding: 10px;
+        padding: 0;
+        margin: 0;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -32,13 +36,18 @@ footer {
                 padding: auto;
             }
             ul {
-                @include f-d-j (row, space-evenly);
+                @include f-d-j (row, space-around);
                 list-style-type: none;
                 margin: auto;
                 padding: auto;
                 overflow: hidden;
                 li{
-                    margin: 5px;
+                    margin: 5px 15px;
+                    a{
+                        i{
+                            color: black;
+                        }
+                    }
                 }
             }   
         }
@@ -56,4 +65,11 @@ footer {
             }
         }
     }    
+}
+
+/*Especificación Disclaimer*/
+#disclaimer_footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

@@ -20,17 +20,20 @@
   justify-content: flex-end; }
 
 .carousel {
-  margin: auto;
-  height: 80%;
-  width: 80%;
+  margin: 10px auto;
+  width: 60%;
   display: block; }
-  .carousel .index_carousel_txt {
-    background-color: rgba(255, 255, 0, 0.361);
-    font-size: 15px;
-    padding: 5px; }
-    .carousel .index_carousel_txt a {
+  .carousel .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover; }
+  .carousel .carousel-inner .carousel-item .carousel_text {
+    border: solid 1px;
+    padding-top: 10px; }
+    .carousel .carousel-inner .carousel-item .carousel_text a {
       text-decoration: none;
-      color: black; }
+      color: black;
+      text-align: center; }
 
 .index_p {
   text-align: justify;
@@ -57,7 +60,8 @@
 .datosclub {
   margin: 2%; }
   .datosclub ul {
-    list-style-type: none; }
+    list-style-type: none;
+    padding-left: 0; }
     .datosclub ul li {
       margin-top: 2%;
       margin-bottom: 2%; }
@@ -69,8 +73,8 @@
 .eventos_cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "card1 card1 card2 card3" "card1 card1 card4 card5" "card9 card6 card8 card8" "card9 card7 card8 card8";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "card1 card2 card3 card9" "card8 card5 card6 card9" "card8 card4 card7 card10";
   row-gap: 10px;
   justify-content: space-between; }
   .eventos_cards .eventos_card1 {
@@ -91,6 +95,8 @@
     grid-area: card8; }
   .eventos_cards .eventos_card9 {
     grid-area: card9; }
+  .eventos_cards .eventos_card10 {
+    grid-area: card10; }
   .eventos_cards section {
     width: 90%;
     background-color: white;
@@ -102,13 +108,20 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around; }
+    justify-content: space-around;
+    transition: 0.5s; }
     .eventos_cards section a .eventos_imgcard {
       width: 100%; }
-    .eventos_cards section div h2 {
-      font-size: 100%; }
-    .eventos_cards section div p {
-      font-size: 80%; }
+    .eventos_cards section div {
+      padding-top: 5px; }
+      .eventos_cards section div h2 {
+        font-size: 100%;
+        padding: 0px; }
+      .eventos_cards section div p {
+        font-size: 80%;
+        padding: 0px; }
+    .eventos_cards section:hover {
+      box-shadow: 0px 5px 0px 0px yellow; }
 
 .tienda_título {
   text-align: center;
@@ -127,62 +140,65 @@
   margin-top: 2%;
   margin-bottom: 2%; }
 
-.tienda_comprar, .tienda_ver {
-  background-color: black;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; }
-
-.tienda_ver {
-  background-color: yellow;
-  color: black; }
-
 .socios .socios_título {
   text-align: center;
   margin: 5%; }
 
 .socios .socios_formulario {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   margin-right: 25%;
   margin-left: 25%; }
-  .socios .socios_formulario section div {
+  .socios .socios_formulario div {
     margin-right: 2%;
     margin-top: 2%;
     margin-bottom: 2%;
     width: 100%; }
-  .socios .socios_formulario section .socios_subtítulo {
+  .socios .socios_formulario .socios_subtítulo {
     margin-top: 2%;
     margin-bottom: 2%;
     text-decoration: underline; }
-  .socios .socios_formulario section .socios_formulario_na {
+  .socios .socios_formulario .socios_formulario_na {
     display: flex; }
-  .socios .socios_formulario section .socios_formulario_info {
+  .socios .socios_formulario .socios_formulario_info {
     display: flex;
     justify-content: space-between; }
-  .socios .socios_formulario section .socios_seleccion {
+  .socios .socios_formulario .socios_seleccion {
     border: solid; }
-    .socios .socios_formulario section .socios_seleccion tr {
-      text-align: center; }
-      .socios .socios_formulario section .socios_seleccion tr td {
-        text-align: center; }
-  .socios .socios_formulario section .socios_formulario_tarjeta {
+    .socios .socios_formulario .socios_seleccion tr {
+      text-align: center;
+      padding: 10px; }
+      .socios .socios_formulario .socios_seleccion tr td {
+        text-align: center;
+        padding: 10px; }
+  .socios .socios_formulario .socios_formulario_tarjeta {
     display: flex;
     justify-content: space-between; }
-  .socios .socios_formulario section .socios_formulario_facturacion {
+  .socios .socios_formulario .socios_formulario_facturacion {
     display: flex; }
-    .socios .socios_formulario section .socios_formulario_facturacion .socios_formulario_facturacion_na {
+    .socios .socios_formulario .socios_formulario_facturacion .socios_formulario_facturacion_na {
       display: flex; }
-  .socios .socios_formulario section .socios_formulario_facturacion_direccion {
+  .socios .socios_formulario .socios_formulario_facturacion_direccion {
     display: flex; }
   .socios .socios_formulario .socios_formulario_telefono {
     display: flex; }
 
 #socios_excepcion {
   margin-left: 2%; }
+
+.disclaimer_titulo {
+  text-align: center;
+  font-size: xx-large;
+  margin-top: 10px; }
+
+.disclaimer {
+  margin-top: 25px;
+  text-align: justify; }
+
+.sociedad {
+  display: block;
+  margin: auto;
+  width: 50%; }
 
 footer {
   margin-top: 15px; }
@@ -195,14 +211,19 @@ footer {
     footer .card-header .card-header_datos {
       width: 100%;
       display: flex;
-      justify-content: space-around; }
-      footer .card-header .card-header_datos p a {
-        text-decoration: none;
-        text-decoration: underline;
-        color: white; }
+      justify-content: space-around;
+      align-items: center; }
+      footer .card-header .card-header_datos p {
+        padding: 0;
+        margin: 0; }
+        footer .card-header .card-header_datos p a {
+          text-decoration: none;
+          text-decoration: underline;
+          color: white; }
   footer .card-body {
     background-color: yellow;
-    padding: 10px;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; }
@@ -214,13 +235,15 @@ footer {
       footer .card-body .arriba ul {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         list-style-type: none;
         margin: auto;
         padding: auto;
         overflow: hidden; }
         footer .card-body .arriba ul li {
-          margin: 5px; }
+          margin: 5px 15px; }
+          footer .card-body .arriba ul li a i {
+            color: black; }
     footer .card-body .abajo {
       display: inline-block;
       align-items: center; }
@@ -231,6 +254,12 @@ footer {
         footer .card-body .abajo .marcadeagua a {
           text-decoration: none;
           color: grey; }
+
+/*Especificación Disclaimer*/
+#disclaimer_footer {
+  position: relative;
+  bottom: 0;
+  width: 100%; }
 
 .card-group {
   width: 66%;
@@ -243,9 +272,54 @@ footer {
     margin: 20px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s; }
     .card-group .card .imgcard {
       width: 100%; }
+    .card-group .card:hover {
+      box-shadow: 0px 0 0px 0 yellow; }
+
+/* Especificaciones tienda */
+.card-group .card .card-body {
+  justify-content: space-around; }
+  .card-group .card .card-body .nombre_producto {
+    font-size: 15px; }
+  .card-group .card .card-body .precio_producto {
+    font-weight: bold; }
+  .card-group .card .card-body .cuotas_producto {
+    font-size: 12px; }
+
+.tienda_botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .tienda_botones .tienda_comprar, .tienda_botones .tienda_ver {
+    background-color: black;
+    color: white;
+    border: none;
+    margin: 5px;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.5s; }
+    .tienda_botones .tienda_comprar:hover, .tienda_botones .tienda_ver:hover {
+      box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.5); }
+  .tienda_botones .tienda_ver {
+    background-color: yellow;
+    color: black; }
+
+.form_button {
+  padding: 2px;
+  border-radius: 10%;
+  border-width: 0.1px;
+  background-color: yellow;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.5s; }
+  .form_button:hover {
+    box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.5); }
 
 @media screen and (max-width: 768px) {
   /*index*/
@@ -261,9 +335,9 @@ footer {
   /*Eventos*/
   .eventos_cards {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
-    grid-template-areas: "card1" "card2" "card3" "card4" "card5" "card6" "card7" "card8" "card9";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: "card1 card8" "card2 card8" "card3 card4" "card9 card5" "card9 card6" "card7 card10";
     row-gap: 10px;
     justify-content: space-between; }
   /*Socios*/
@@ -299,7 +373,7 @@ footer {
   .eventos_cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-    grid-template-areas: "card1 card1 card2" "card1 card1 card3" "card4 card8 card8" "card5 card8 card8" "card9 card6 card7";
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: "card1 card2 card9" "card3 card4 card9" "card8 card5 card6" "card8 card7 card10";
     row-gap: 10px;
     justify-content: space-between; } }

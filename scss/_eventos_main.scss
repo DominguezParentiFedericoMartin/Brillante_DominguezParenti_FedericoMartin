@@ -5,14 +5,14 @@
 .eventos_cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:    "card1 card1 card2 card3"
-                            "card1 card1 card4 card5"
-                            "card9 card6 card8 card8"
-                            "card9 card7 card8 card8";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:    "card1 card2 card3 card9"
+                            "card8 card5 card6 card9"
+                            "card8 card4 card7 card10"
+                            ;
     row-gap: 10px;
     justify-content: space-between;
-    @each $card in card1, card2, card3, card4, card5, card6, card7, card8, card9{
+    @each $card in card1, card2, card3, card4, card5, card6, card7, card8, card9, card10{
         .eventos_#{$card}{
             grid-area: $card ;
         }
@@ -33,12 +33,19 @@
             } 
         }
         div {
+            padding-top:5px;
             h2{
                 font-size: 100%;
+                padding: 0px
             }
             p{
                 font-size: 80%;
+                padding: 0px
             }
+        }
+        transition: 0.5s;
+        &:hover {
+            box-shadow: 0px 5px 0px 0px rgb(255, 255, 0);
         }
 }
 

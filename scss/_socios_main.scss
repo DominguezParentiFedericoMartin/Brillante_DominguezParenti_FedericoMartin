@@ -4,10 +4,10 @@
         margin: map-get($sizes, s);
     }    
     .socios_formulario{
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
         margin-right:map-get($sizes, q);
         margin-left:map-get($sizes, q);
-        section {
             div{
                 margin-right: map-get($sizes, xs);
                 margin-top: map-get($sizes, xs);
@@ -30,9 +30,11 @@
                 border: solid;
                 tr{
                     text-align: center;
-                td{
-                        text-align: center;
-                    }
+                    padding: 10px;
+                    td{
+                            text-align: center;
+                            padding: 10px;
+                        }
                 }
             }
             .socios_formulario_tarjeta{
@@ -48,7 +50,6 @@
             .socios_formulario_facturacion_direccion{
                 display: flex;
             } 
-        }
         .socios_formulario_telefono{
             display: flex;
         }

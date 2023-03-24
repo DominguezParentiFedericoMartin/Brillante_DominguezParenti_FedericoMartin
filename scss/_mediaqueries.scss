@@ -20,17 +20,15 @@
     /*Eventos*/
     .eventos_cards {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
-        grid-template-areas:    "card1"
-                                "card2"
-                                "card3"
-                                "card4"
-                                "card5"
-                                "card6"
-                                "card7"
-                                "card8"
-                                "card9";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas:    "card1 card8"
+                                "card2 card8"
+                                "card3 card4"
+                                "card9 card5"
+                                "card9 card6"
+                                "card7 card10"
+                                ;
         row-gap: 10px;
         justify-content: space-between;
     }
@@ -77,12 +75,11 @@
     .eventos_cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-        grid-template-areas:    "card1 card1 card2"
-                                "card1 card1 card3"
-                                "card4 card8 card8"
-                                "card5 card8 card8"
-                                "card9 card6 card7"
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas:    "card1 card2 card9"
+                                "card3 card4 card9"
+                                "card8 card5 card6"
+                                "card8 card7 card10"
                                 ;
         row-gap: 10px;
         justify-content: space-between;
