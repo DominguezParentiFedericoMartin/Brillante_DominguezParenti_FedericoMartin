@@ -45,6 +45,9 @@
     }
     .socios_formulario_facturacion{
         flex-direction: column;
+        .socios_formulario_facturacion_na{
+            flex-direction: column;
+        }
     }
     .socios_formulario_facturacion_direccion{
         flex-direction: column;

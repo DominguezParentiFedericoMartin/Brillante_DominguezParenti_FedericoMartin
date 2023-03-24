@@ -4,6 +4,7 @@
         margin: map-get($sizes, s);
     }    
     .socios_formulario{
+        position: relative;
         display: flex;
         flex-direction: column;
         margin-right:map-get($sizes, q);

@@ -145,6 +145,7 @@
   margin: 5%; }
 
 .socios .socios_formulario {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-right: 25%;
@@ -350,6 +351,8 @@ footer {
     flex-direction: column; }
   .socios_formulario_facturacion {
     flex-direction: column; }
+    .socios_formulario_facturacion .socios_formulario_facturacion_na {
+      flex-direction: column; }
   .socios_formulario_facturacion_direccion {
     flex-direction: column; } }
 

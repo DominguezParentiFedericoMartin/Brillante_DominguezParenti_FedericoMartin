@@ -48,7 +48,7 @@
     <main class="socios container-xl">
         <div class="container-fluid">
         <h1 class="socios_título">Formá parte de este proyecto eterno</h1>
-        <form class="socios_formulario" action="../pages/Disclaimer.html" method="get">
+        <form class="socios_formulario m-3" action="../pages/Disclaimer.html" method="get">
                 <h2 class="socios_subtítulo">Paso 1: Información Personal</h2>
                 <section class="socios_formulario_na">
                     <div>
@@ -112,38 +112,40 @@
                 </section>
             </section>
                 <h2 class="socios_subtítulo">Paso 2: Elija un plan</h2>
-                <table class="socios_seleccion">
-                <tr>
-                    <th>Planes</th>
-                    <th>Descripción</th>
-                    <th>Precios</th>
-                    <TH>Selección</th>
-                </tr>
-                <tr>
-                    <td>Infantil</td>
-                    <td>Acceso a instalaciones</td>
-                    <td>$2000 x mes</td>
-                    <td><input type="radio" id="infantil" name="plan" value="1" required/></td>
-                </tr>
-                <tr>
-                    <td>Adolescente</td>
-                    <td>Acceso a instalaciones, partidos locales y eventos culturales</td>
-                    <td>$2500 x mes</td>
-                    <td><input type="radio" id="Adolescente" name="plan" value="2" required/></td>
-                </tr>
-                <tr>
-                    <td>Adulto</td>
-                    <td>Acceso a instalaciones, partidos locales y eventos culturales + un invitado</td>
-                    <td>$3000 x mes</td>
-                    <td><input type="radio" id="Adulto" name="plan" value="3" required/></td>
-                </tr>
-                <tr>
-                    <td>Jubilado</td>
-                    <td>Acceso a instalaciones, partidos locales, eventos culturales y club de fundadores + un invitado</td>
-                    <td>$2000 x mes</td>
-                    <td><input type="radio" id="Jubilado" name="plan" value="4" required/></td>
-                </tr>
-                </table>
+                <div class="table-responsive">
+                    <table class="table-condensed socios_seleccion">
+                    <tr>
+                        <th>Planes</th>
+                        <th>Descripción</th>
+                        <th>Precios</th>
+                        <TH>Selección</th>
+                    </tr>
+                    <tr>
+                        <td>Infantil</td>
+                        <td>Acceso a instalaciones</td>
+                        <td>$2000 x mes</td>
+                        <td><input type="radio" id="infantil" name="plan" value="1" required/></td>
+                    </tr>
+                    <tr>
+                        <td>Adolescente</td>
+                        <td>Acceso a instalaciones, partidos locales y eventos culturales</td>
+                        <td>$2500 x mes</td>
+                        <td><input type="radio" id="Adolescente" name="plan" value="2" required/></td>
+                    </tr>
+                    <tr>
+                        <td>Adulto</td>
+                        <td>Acceso a instalaciones, partidos locales y eventos culturales + un invitado</td>
+                        <td>$3000 x mes</td>
+                        <td><input type="radio" id="Adulto" name="plan" value="3" required/></td>
+                    </tr>
+                    <tr>
+                        <td>Jubilado</td>
+                        <td>Acceso a instalaciones, partidos locales, eventos culturales y club de fundadores + un invitado</td>
+                        <td>$2000 x mes</td>
+                        <td><input type="radio" id="Jubilado" name="plan" value="4" required/></td>
+                    </tr>
+                    </table>
+                </div>
                 <h2 class="socios_subtítulo">Paso 3: pagar</h2>
                 <h3>Método de pago</h3>
                 <div>
@@ -233,7 +235,7 @@
     </main>
     <!--No logro encontrar el porqué del responsive problemático del footer de esta página en particular-->
     <footer>
-        <div class="card-header">
+        <div class="card-header container-fluid">
             <div class="row card-header_datos">
                 <p class="col-sm-4 col-lg-2"><b>Brillanté.com.ar</b></p>
                 <p class="col-sm-4 col-lg-2">Sitio Oficial</p>
@@ -242,7 +244,7 @@
                 <p class="col-sm-6 col-lg-2"><a href="mailto:info@brillanté.com.ar">info@brillanté.com.ar</a></p>
             </div>
         </div>
-        <div class="card-body">
+        <div class="card-body container-fluid">
             <div class="arriba">
                 <p>Los estoicos del deporte</p>
                 <ul class="redes">
